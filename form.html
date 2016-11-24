@@ -1,0 +1,338 @@
+<div id="expa-form">
+  <link rel="stylesheet" media="all" href="http://aiesec.org.pa/wp-content/plugins/EXPAGRPodio-WPplugin-master/expa-form-styles.css">
+  <link rel="stylesheet" media="all" href="https://d2cmuesa4snpwn.cloudfront.net/webforms/stylesheets/_e709cd82/webforms.css" class="section-webforms" />
+
+  <div class="container">
+    <form class="webforms" id="webform" data-locale="es_ES" enctype="multipart/form-data" action="http://aiesec.org.pa/gis_reg_process.php" accept-charset="UTF-8" method="post">
+
+    <h2 class="webforms__heading">
+      REGÍSTRATE AQUÍ
+    </h2>
+    <br>
+    <div class="webforms__description">
+      <p>Bienvenido al proceso de aplicación con AIESEC. Por favor responde las siguientes preguntas y en un periodo de 48 horas nos contactaremos contigo para encontrar oportunidades que encajen con tu perfil e intereses. </p>
+    </div>
+
+
+  <div id="webforms__fields-container">
+      <div class="form-group">
+          <label class="webforms__label" for="field_nombres">Nombres *</label>
+
+        <div class="webforms__field text-field">
+            <input type="text" name="fields[first-name]" id="field_nombres" value="" class="form-control" required="required" />
+
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="webforms__label" for="field_apellidos">Apellidos *</label>
+
+        <div class="webforms__field text-field">
+            <input type="text" name="fields[last-name]" id="field_apellidos" value="" class="form-control" required="required" />
+
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="webforms__label" for="field_telefono">Teléfono *</label>
+
+        <div class="webforms__field phone-field">
+            <div id="phones" class="webform__multiple-wrapper">
+  <div class="webforms__multiple-field phone-group">
+      <div class="webform__multiple-field">
+        <div class="input-group">
+          <span class="input-group-addon">
+            <select name="fields[telefono][][type]">
+              <option value="mobile">Móvil</option>
+              <option value="work">Trabajo</option>
+              <option value="home">Casa</option>
+              <option value="main">Principal</option>
+              <option value="work_fax">Fax trabajo</option>
+              <option value="private_fax">Fax privado</option>
+              <option value="other">Otro</option>
+            </select>
+          </span>
+
+          <input type="text" name="fields[telefono][][value]" class="form-control  webform__text-input--phone" required="required" maxlength="50" />
+
+        </div>
+      </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+      <div class="form-group">
+        <button id="add-phone" type="button" class="btn btn-default btn-xs field-add-another">Añadir otro</button>
+      </div>
+      <br><br>
+      <div class="form-group">
+          <label class="webforms__label" for="field_correo-electronico">Correo Electrónico *</label>
+
+        <div class="webforms__field text-field">
+            <input type="text" name="fields[correo-electronico]" id="field_correo-electronico" value="" class="form-control" required="required" />
+
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="webforms__label" for="field_contrasena">Contraseña * (8 caracteres mínimo)</label>
+
+        <div class="webforms__field text-field">
+            <input type="password" name="fields[password]" id="field_contrasena" value="" class="form-control" required="required" pattern=".{8,}"/>
+
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="webforms__label" for="field_pais">País de nacimiento *</label>
+
+        <div class="webforms__field text-field">
+            <input type="text" name="fields[pais]" id="field_pais" value="" class="form-control" required="required" />
+
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="webforms__label" for="field_genero">Género *</label>
+
+        <div class="webforms__field category-field">
+            <select name="fields[genero]" id="field_genero" class="form-control" required="required">
+                <option value="">Por favor, elige una opción</option>
+                <option value="1">Masculino</option>
+                <option value="2">Femenino</option>
+                <option value="3">Otro</option>
+            </select>
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="webforms__label" for="field_localcommittee">Entidad Local *</label>
+
+        <div class="webforms__field category-field">
+            <select name="fields[localcommittee]" id="field_localcommittee" class="form-control" required="required">
+                <option value="">Por favor, elige una opción</option>
+                <option value="2008">MC Panama</option>
+                <option value="193">UTP</option>
+                <option value="1949">UP</option>
+                <option value="108">ISTMO</option>
+                <option value="1708">AZUERO (CLOSED)</option>
+                <option value="1473">USMA</option>
+                <option value="1707">VERAGUAS</option>
+            </select>
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="webforms__label" for="field_cuales-son-las-tres-areas-de-impacto-en-las-que-estas-i">¿Cuáles son las tres áreas de impacto en las que estás interesado en aplicar?  *</label>
+
+        <div class="webforms__field category-field">
+              <div class="checkbox">
+      <label>
+        <input type="checkbox" name="fields[cuales-son-las-tres-areas-de-impacto-en-las-que-estas-i][]" id="fields_cuales-son-las-tres-areas-de-impacto-en-las-que-estas-i_" value="1" /> Educación de Calidad
+      </label>
+  </div>
+  <div class="checkbox">
+      <label>
+        <input type="checkbox" name="fields[cuales-son-las-tres-areas-de-impacto-en-las-que-estas-i][]" id="fields_cuales-son-las-tres-areas-de-impacto-en-las-que-estas-i_" value="2" /> Reducir inequidades
+      </label>
+  </div>
+  <div class="checkbox">
+      <label>
+        <input type="checkbox" name="fields[cuales-son-las-tres-areas-de-impacto-en-las-que-estas-i][]" id="fields_cuales-son-las-tres-areas-de-impacto-en-las-que-estas-i_" value="3" /> Acción por el clima
+      </label>
+  </div>
+  <div class="checkbox">
+      <label>
+        <input type="checkbox" name="fields[cuales-son-las-tres-areas-de-impacto-en-las-que-estas-i][]" id="fields_cuales-son-las-tres-areas-de-impacto-en-las-que-estas-i_" value="4" /> Equidad de género
+      </label>
+  </div>
+  <div class="checkbox">
+      <label>
+        <input type="checkbox" name="fields[cuales-son-las-tres-areas-de-impacto-en-las-que-estas-i][]" id="fields_cuales-son-las-tres-areas-de-impacto-en-las-que-estas-i_" value="5" /> Trabajo decente  y crecimiento económico
+      </label>
+  </div>
+
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="webforms__label" for="field_cual-es-tu-estado-o-ciudad-de-residencia">¿Cuál es tu estado o ciudad de residencia? *</label>
+
+        <div class="webforms__field text-field">
+            <input name="fields[cual-es-tu-estado-o-ciudad-de-residencia]" id="field_cual-es-tu-estado-o-ciudad-de-residencia" class="form-control" required="required">
+
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="webforms__label" for="field_cual-es-tu-estado-academico-actual">¿Cuál es tu estado académico actual?  *</label>
+
+        <div class="webforms__field category-field">
+            <select name="fields[cual-es-tu-estado-academico-actual]" id="field_cual-es-tu-estado-academico-actual" class="form-control" required="required">
+                <option value="">Por favor, elige una opción</option>
+                <option value="1">Actualmente no estudio</option>
+                <option value="2">Actualmente me encuentro estudiando la universidad</option>
+                <option value="3">Soy recién egresado de universidad</option>
+                <option value="4">Otro</option>
+            </select>
+
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="webforms__label" for="field_nombre-de-la-universidad-en-la-que-estudias-solo-si-apl">Nombre de la Universidad en la que estudias (Sólo si aplica)</label>
+
+        <div class="webforms__field text-field">
+            <input name="fields[nombre-de-la-universidad-en-la-que-estudias-solo-si-apl]" id="field_nombre-de-la-universidad-en-la-que-estudias-solo-si-apl" class="form-control">
+
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="webforms__label" for="field_cual-es-tu-pais-de-interes">¿Cuál es tu país de interés? *</label>
+
+        <div class="webforms__field category-field">
+              <div class="checkbox">
+      <label>
+        <input type="checkbox" name="fields[cual-es-tu-pais-de-interes][]" id="fields_cual-es-tu-pais-de-interes_" value="1" /> México
+      </label>
+  </div>
+  <div class="checkbox">
+      <label>
+        <input type="checkbox" name="fields[cual-es-tu-pais-de-interes][]" id="fields_cual-es-tu-pais-de-interes_" value="2" /> Colombia
+      </label>
+  </div>
+  <div class="checkbox">
+      <label>
+        <input type="checkbox" name="fields[cual-es-tu-pais-de-interes][]" id="fields_cual-es-tu-pais-de-interes_" value="3" /> Brasil
+      </label>
+  </div>
+  <div class="checkbox">
+      <label>
+        <input type="checkbox" name="fields[cual-es-tu-pais-de-interes][]" id="fields_cual-es-tu-pais-de-interes_" value="4" /> Perú
+      </label>
+  </div>
+  <div class="checkbox">
+      <label>
+        <input type="checkbox" name="fields[cual-es-tu-pais-de-interes][]" id="fields_cual-es-tu-pais-de-interes_" value="5" /> Guatemala
+      </label>
+  </div>
+
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="webforms__label" for="field_texto">Enlista los idiomas que sabes, y su nivel (ejemplo: Inglés-básico) *</label>
+
+        <div class="webforms__field text-field">
+            <input type="text" name="fields[texto]" id="field_texto" value="" class="form-control" required="required" />
+
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="webforms__label" for="field_como-te-enteraste-de-aiesec">¿Cómo te enteraste de AIESEC?  *</label>
+
+        <div class="webforms__field category-field">
+            <select name="fields[como-te-enteraste-de-aiesec]" id="field_como-te-enteraste-de-aiesec" class="form-control" required="required">
+                <option value="">Por favor, elige una opción</option>
+                <option value="1">Por un amigo</option>
+                <option value="11">Google</option>
+                <option value="2">Facebook</option>
+                <option value="3">Twitter</option>
+                <option value="4">Instagram</option>
+                <option value="5">Mail</option>
+                <option value="6">Website</option>
+                <option value="7">Busqueda en google</option>
+                <option value="8">Stand en universidad</option>
+                <option value="9">Poster</option>
+                <option value="10">Otro</option>
+            </select>
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="webforms__label" for="field_por-que-te-gustaria-realizar-tu-voluntariado-con-aiesec">¿Por qué te gustaría realizar tu voluntariado con AIESEC? *</label>
+
+        <div class="webforms__field category-field">
+              <div class="checkbox">
+      <label>
+        <input type="checkbox" name="fields[por-que-te-gustaria-realizar-tu-voluntariado-con-aiesec][]" id="fields_por-que-te-gustaria-realizar-tu-voluntariado-con-aiesec_" value="1" /> Desarrollo de liderazgo
+      </label>
+  </div>
+  <div class="checkbox">
+      <label>
+        <input type="checkbox" name="fields[por-que-te-gustaria-realizar-tu-voluntariado-con-aiesec][]" id="fields_por-que-te-gustaria-realizar-tu-voluntariado-con-aiesec_" value="2" /> Diversidad cultural
+      </label>
+  </div>
+  <div class="checkbox">
+      <label>
+        <input type="checkbox" name="fields[por-que-te-gustaria-realizar-tu-voluntariado-con-aiesec][]" id="fields_por-que-te-gustaria-realizar-tu-voluntariado-con-aiesec_" value="3" /> Desarrollo personal y profesional
+      </label>
+  </div>
+  <div class="checkbox">
+      <label>
+        <input type="checkbox" name="fields[por-que-te-gustaria-realizar-tu-voluntariado-con-aiesec][]" id="fields_por-que-te-gustaria-realizar-tu-voluntariado-con-aiesec_" value="4" /> Crear un impacto en la sociedad
+      </label>
+  </div>
+  <div class="checkbox">
+      <label>
+        <input type="checkbox" name="fields[por-que-te-gustaria-realizar-tu-voluntariado-con-aiesec][]" id="fields_por-que-te-gustaria-realizar-tu-voluntariado-con-aiesec_" value="5" /> Conocer personas y hacer amistades alrededor del mundo
+      </label>
+  </div>
+
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="webforms__label">Datos adjuntos</label>
+      <div id="files" class="form-group webforms__multiple-wrapper">
+        <div class="webforms__multiple-field">
+          <input type="file" name="attachments[]" id="attachments_" class="webforms__upload webforms__multiple" />
+        </div>
+      </div>
+      </div>
+      <div class="form-group">
+        <button id="add-file" type="button" class="btn btn-default btn-xs field-add-another">Añadir otro</button>
+      </div>
+  </div>
+
+  <div class="webforms__submit-box form-group">
+    <button name="button" type="submit" class="btn btn-primary">Enviar</button>
+  </div>
+
+</form>
+
+  </div>
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <script>
+    window.onload = function() {
+      var query = getQueryParams(document.location.search);
+
+      if(typeof query.registro !== 'undefined') {
+        if(query.registro === 'yes') {
+          alert('Su registro fue realizado exitosamente.');
+        }
+        else {
+          alert('Hubo un problema intentando realizar su registro.');
+        }
+      }
+    };
+
+    function getQueryParams(qs) {
+        qs = qs.split('+').join(' ');
+
+        var params = {},
+            tokens,
+            re = /[?&]?([^=]+)=([^&]*)/g;
+
+        while (tokens = re.exec(qs)) {
+            params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+        }
+
+        return params;
+    }
+
+    $('select').on('change', function() {
+      if($(this).find('option').first().attr('value') === '') {
+        $(this).find('option').first().remove();
+      }
+    });
+
+    $('#add-phone').on('click', function() {
+        $('#phones').append($('.phone-group:first').html());
+    });
+
+    $('#add-file').on('click', function() {
+        $('#files').append('<div class="webforms__multiple-field"><input type="file" name="attachments[]" id="attachments_" class="webforms__upload webforms__multiple" /></div>');
+    });
+
+</script>
+</div>
