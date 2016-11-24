@@ -25,3 +25,8 @@ Enjoy working with the plugin. If you have any inputs feedback is highly appreci
 
 AIESECly yours
 Kris and Enrique
+
+---------------------
+Este plugin fue modificado para ser adaptado a las necesidades específicas de Aiesec en Panamá.
+
+Felipe Chen A. gab06.austin@gmail.com
